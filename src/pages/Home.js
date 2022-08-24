@@ -5,6 +5,7 @@ import HomeLeftCard from '../Components/HomeLeftCard/Match';
 import HomeRightCard from '../Components/HomeRightCard/Right';
 import Slider from '../Components/HomeSlider/Slider';
 
+
 import './home.css'
 const Home = () => {
   return (

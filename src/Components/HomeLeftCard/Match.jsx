@@ -30,9 +30,9 @@ const Match = () => {
                       <GiSouthAfricaFlag />
                       <span>{item.countryName}</span>
                     </span>
-                  </Accordion.Header>
+                  </Accordion.Header>  
                   <Accordion.Body>
-                    <ListGroup as="ul">
+                    <ListGroup as="ul" >
                       <ListGroup.Item as="li" active>
                         Results
                       </ListGroup.Item>
@@ -64,7 +64,7 @@ const Match = () => {
           eventKey="contact"
           title={<BsCalendarDate className="calendericon" />}
         >
-          <Calendar onChange={onChange} value={value} classNam="calenderin" />
+          <Calendar onChange={onChange} value={value} className="calenderin" />
         </Tab>
       </Tabs>
     </div>

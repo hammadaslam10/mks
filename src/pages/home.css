@@ -8,7 +8,11 @@
 .homeCard {
   display: flex;
 }
-
+.nextrace{
+  height: 90vh;
+  width: 100%;
+  background-color: #eeecec;
+}
 @media (max-width: 1024px) and (min-width: 925px) {
   .section {
     display: block;

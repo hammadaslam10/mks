@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {FaHome,FaSearch} from 'react-icons/fa'
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const NavMenu = () => {
   const [open,setOpen] = useState(true)
@@ -20,8 +21,11 @@ const NavMenu = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />  
       
       <Navbar.Collapse id="basic-navbar-nav">
+        <Router>
         <Nav className="me-auto" >
-        <Navbar.Brand href="#home"><FaHome className='homeicon'/> </Navbar.Brand>
+        <Navbar.Brand>
+        <FaHome className='homeicon'/>
+           </Navbar.Brand>
           <NavDropdown title="ABOUT" id="basic-nav-dropdown " >
             <NavDropdown.Item href="#" >Action</NavDropdown.Item>
             <NavDropdown.Item href="#">
@@ -102,7 +106,7 @@ const NavMenu = () => {
           </NavDropdown>
      
         </Nav>
-        
+        </Router>
       </Navbar.Collapse>
       {
         open? <> <FaSearch style ={{color :'white'}} onClick={handleSearch}/></> :

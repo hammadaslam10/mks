@@ -5,17 +5,20 @@ import Navbar from "react-bootstrap/Navbar";
 import { FcAlarmClock, FcBookmark } from "react-icons/fc";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { FaHorseHead } from "react-icons/fa";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 const TopMenu = () => {
   return (
     <React.Fragment>
       <div className="TopMenu">
         <Container>
+          <Router>
           <Navbar expand="lg" >
             <Container className="containerforflex"></Container>
             <span className="spanforflex">
             <span className="firstop">
-              <div className="time">
+            <div className="time">
                 <FcAlarmClock className="icon" />
                 <p>NextRace</p>
               </div>
@@ -44,6 +47,7 @@ const TopMenu = () => {
             </span>
             </span>
           </Navbar>
+          </Router>
         </Container>
       </div>
     </React.Fragment>
