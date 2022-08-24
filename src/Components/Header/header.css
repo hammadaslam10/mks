@@ -1,0 +1,130 @@
+/* Topbar CSS */
+
+.TopMenu{
+height: 4rem;
+width: 100%;
+background-color: #f1f1f1;
+}
+/* Banner CSS */
+.bannerheader{
+    height: 10rem;
+width: 100%;
+/* background-image: url('../../assets/banner.gif');
+background-repeat: no-repeat;
+background-position: center; */
+}
+
+/* Nav CSS */
+.NavMenu{
+    height: 5rem;
+width: 100%;
+background-color: rgb(66, 66, 183);
+}
+.Nav {
+    margin-top: 4px;
+}
+.homeicon{
+    font-size: 22px;
+    margin-top: -7px;
+}
+ /* Top Bar*/
+
+ .firstop{
+
+    display :flex;
+    margin : 0 110px;
+font-size: 12px;
+}
+.time{
+    width: 62px;
+    height : 40px;
+    margin : 0 11px;
+
+background-color: white;
+
+
+
+}
+.icon{
+
+    font-size: 25px;
+    margin-left: 18px;
+}
+.subscribe{
+
+    width: 62px;
+    height : 40px;
+    margin : 0 11px;
+align-items: center;
+background-color: white;
+
+
+}
+.sectop{
+
+    display :flex;
+    margin : 0;
+    font-size: 12px;
+}
+.Account{
+    width: 72px;
+    height : 45px;
+    margin : 0 11px;
+align-items: center;
+background-color: white;
+}
+.Tracker{
+    width: 62px;
+    height : 45px;
+    margin : 0 11px;
+align-items: center;
+background-color: white;
+
+}
+.lang{
+height: 30px;
+align-items: center;
+margin: 10px 22px;
+
+}
+.time >a {
+    margin : 0 4px;
+
+
+
+}
+.subscribe > a{
+
+    margin : 0 4px;
+
+}
+.Account >a{
+margin: 0 4px;
+
+}
+.Tracker >a{
+
+    margin-left: 11px;
+}
+.iconacc{
+    font-size: 25px;
+    margin-left :24px;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background: rgb(66, 66, 183);
+    z-index: 1999;
+    margin-top: 0.8rem;
+}
+.spanforflex {
+    display: flex;
+}
+
+.nav-link {
+    text-align: center !important;
+}
+.navbar-nav {
+    text-align: center;}

@@ -1,0 +1,25 @@
+.right{
+    height: 38rem;
+    width: 100%;
+    flex: 1;
+    margin-top: 1rem;
+}
+.competition{
+background-color: #fff;
+height: 20rem;
+}
+
+.competitiongroup{
+    display: flex;
+}
+.competitionlist{
+    width: 80%;
+}
+.competitionupdate{
+    width: 20%;
+ 
+}
+.activeheader{
+    background-color: rgb(0, 0, 255) !important;
+
+}

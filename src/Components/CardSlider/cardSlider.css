@@ -1,0 +1,45 @@
+.CardSlider{
+    height: 10rem;
+    width: 90%;
+    background-color: #f0eff1;
+    flex: 6;
+    margin-top: 0.5rem;
+}
+
+.singleCard{
+    height: 9rem;
+    width: 10rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+
+}
+.singleCard > span{
+margin-left: 0.4rem;
+}
+.singleCardflex > span{
+    margin-left: 0.4rem;
+    }
+.btncard{
+    width: 8rem;
+    margin: 1rem;
+    background-color: rgb(0, 0, 255);;
+}
+.react-multiple-carousel__arrow {
+    position: absolute;
+    outline: 0;
+    transition: all .5s;
+    border-radius: 2px !important;
+    z-index: 1000;
+    border: 0;
+    background: #000 !important;
+    min-width: 24px !important;
+    min-height: 43px;
+    opacity: 1;
+    margin-left: -66px;
+    cursor: pointer;
+}
+.singleCardflex {
+    display: flex;
+    justify-content: space-between;
+}
