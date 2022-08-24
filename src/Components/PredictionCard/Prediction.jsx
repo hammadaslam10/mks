@@ -13,7 +13,7 @@ const Prediction = () => {
       <div className='predictorcard'>
       <Card >
     <Card.Header className = "cardHeader">Live Prediction</Card.Header>
-    <Card.Header className = "cardHeader2">13:20 Yarmouth <br/> 1M 3Y (14 runners) <div> <FcRating className='cardIcon'/>  <img src= {flag}  className='imagediv'/> <MdOutlineKeyboardArrowRight className ='arrow'/> </div>
+    <Card.Header className = "cardHeader2">13:20 Yarmouth <br/> 1M 3Y (14 runners) <div> <FcRating className='cardIcon'/>  <img src= {flag} alt="img" className='imagediv'/> <MdOutlineKeyboardArrowRight className ='arrow'/> </div>
   </Card.Header>
   {
         ResultCard.map((item) => {

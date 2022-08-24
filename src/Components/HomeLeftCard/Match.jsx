@@ -13,7 +13,6 @@ import { Matches } from "../../data/matches";
 const Match = () => {
   const [value, onChange] = useState(new Date());
 
-  console.log("DATE IS", value);
   return (
     <div className="match">
       <Tabs
@@ -25,7 +24,7 @@ const Match = () => {
           <Accordion defaultActiveKey="0" flush>
             {Matches.map((item) => {
               return (
-                <Accordion.Item eventKey={item.id}>
+                <Accordion.Item eventKey={item.id} key={item.key}>
                   <Accordion.Header>
                     <span>
                       <GiSouthAfricaFlag />

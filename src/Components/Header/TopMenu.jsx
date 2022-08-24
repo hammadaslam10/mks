@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import { FcAlarmClock, FcBookmark } from "react-icons/fc";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { FaHorseHead } from "react-icons/fa";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const TopMenu = () => {
   return (
@@ -18,24 +17,24 @@ const TopMenu = () => {
             <span className="firstop">
               <div className="time">
                 <FcAlarmClock className="icon" />
-                <a>NextRace</a>
+                <p>NextRace</p>
               </div>
               <div className="subscribe">
                 <FcBookmark className="icon" />
                 <br />
-                <a>Subscribe</a>
+                <p>Subscribe</p>
               </div>
             </span>
             <span className="sectop">
               <div className="Account">
                 <RiAccountCircleLine className="iconacc" />
                 <br />
-                <a>MyAccount</a>
+                <p>MyAccount</p>
               </div>
               <div className="Tracker">
                 <FaHorseHead className="icon" />
                 <br />
-                <a>Tracker</a>
+                <p>Tracker</p>
               </div>
 
               <select className="lang">

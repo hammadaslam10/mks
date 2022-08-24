@@ -27,13 +27,13 @@ const CardSlider = () => {
   };
 
   return (
-    <React.Fragment>
+   
       <div className="CardSlider">
         <Carousel responsive={responsive}>
           {
             cardHome.map((item) => {
               return(
-                <>
+                
                   <div className="singleCard" key={item.id}>
                     <span>{item.owner}</span>
                     <div className="singleCardflex">
@@ -46,13 +46,13 @@ const CardSlider = () => {
                     </div>
                     <Button className="btncard">From</Button>
                   </div>
-                </>
+                
               )
             })
           }
         </Carousel>
       </div>
-    </React.Fragment>
+ 
   );
 };
 

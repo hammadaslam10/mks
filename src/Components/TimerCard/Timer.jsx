@@ -4,51 +4,52 @@ import {BsClockHistory} from 'react-icons/bs'
 
 const Timer = () => {
 
-  const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-09-1`) - +new Date();
-    let timeLeft = {};
+  // const calculateTimeLeft = () => {
+  //   let year = new Date().getFullYear();
+  //   const difference = +new Date(`${year}-09-1`) - +new Date();
+  //   let timeLeft = {};
 
-    if (difference > 0) {
-      timeLeft = {
-        // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        "Hours": Math.floor((difference / (1000 * 60 * 60)) % 24),
-        ":": Math.floor((difference / 1000 / 60) % 60),
-         "": Math.floor((difference / 1000) % 60),
-      };
-    }
+  //   if (difference > 0) {
+  //     timeLeft = {
+  //       // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //       "::": Math.floor((difference / (1000 * 60 * 60)) % 24),
+  //       ":": Math.floor((difference / 1000 / 60) % 60),
+  //        "": Math.floor((difference / 1000) % 60),
+  //     };
+  //   }
 
-    return timeLeft;
-  };
+  //   return timeLeft;
+  // };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  // const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  useEffect(() => {
-    setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setTimeLeft(calculateTimeLeft());
+  //   }, 1000);
+  // });
 
-  const timerComponents = [];
+  // const timerComponents = [];
 
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
+  // Object.keys(timeLeft).forEach((interval) => {
+  //   if (!timeLeft[interval]) {
+  //     return;
+  //   }
 
-    timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}{" "}
-      </span>
-    );
-  });
+  //   timerComponents.push(
+  //     <span>
+  //       {timeLeft[interval]} {interval}{" "}
+  //     </span>
+  //   );
+  // });
 
   return (
     <React.Fragment>
       <div className='timer'>
         <p className="clockheader">ADDINGTON</p>
         <BsClockHistory className="clocktime"/>
-        <p className="clocktimer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</p>
+        <p className="clocktimer">9:06:15</p>
+        {/* <p className="clocktimer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</p> */}
       </div>
     </React.Fragment>
   )
